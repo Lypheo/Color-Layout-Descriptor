@@ -7,7 +7,7 @@ Input needs to be 8-bit YUV.
 clp = core.cld.ComputeCLD(src)
 ```
 
-CLD matrices are saved as one-dimensional lists in the frame properties `CLD_y`, `CLD_` and `CLD_v`.
+CLD matrices are saved as row-major ordered lists in the frame properties `CLD_y`, `CLD_` and `CLD_v`.
 
 Example snippet for finding the frame in a clip that best matches some screenshot, computing the difference as per the spec:
 ```py
